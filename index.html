@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Лояльность</title>
-  <link rel="stylesheet" href="normalize.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <div class="nps">
@@ -31,20 +31,23 @@
           52.%&nbsp;-&nbsp;83.1%
         </span>
         <div class="text__dynamics">
-          <svg class="text__dynamics-img" width="25" height="15">
+          <svg class="text__dynamics-img" width="26" height="15">
             <polygon points="5,15 14,5 23,15" fill="#70a74b"/>
           </svg>
           <span class="text__dynamics-number">3.1</span>
         </div>
       </div>
     </div>
+    <svg class="line" width="300" height="300">
+      <polyline points="35,10 10,10 10,250 20,250"></polyline>
+    </svg>
     <div class="nps__groups">
       <div class="nps__groups-data">
         <div class="nps__groups-item group">
           <p class="group__name">Промоутеры</p>
           <div class="group__count">
             <p class="group__percent">32.0%</p>
-            <p class="group__sample">81</p>
+            <p class="group__sample group__sample--promo">81</p>
           </div>
         </div>
         <div class="nps__groups-item group">
@@ -64,18 +67,18 @@
       </div>
       <div class="nps__groups-dynamics dynamics">
         <div class="dynamics__field">
-          <div class="dynamics__current"></div>
-          <div class="dynamics__previous"></div>
+          <div class="dynamics__current dynamics__current--promo"></div>
+          <div class="dynamics__previous dynamics__previous--promo"></div>
           +1.2%
         </div>
         <div class="dynamics__field">
-          <div class="dynamics__current"></div>
-          <div class="dynamics__previous"></div>
+          <div class="dynamics__current dynamics__current--skeptic"></div>
+          <div class="dynamics__previous dynamics__previous--skeptic"></div>
           +4.8%
         </div>
         <div class="dynamics__field">
-          <div class="dynamics__current"></div>
-          <div class="dynamics__previous"></div>
+          <div class="dynamics__current dynamics__current--critic"></div>
+          <div class="dynamics__previous dynamics__previous--critic"></div>
           -9.7%
         </div>
       </div>
